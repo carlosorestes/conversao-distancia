@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: conversao-distancia
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: conversao-distancia
