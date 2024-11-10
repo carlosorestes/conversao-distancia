@@ -13,10 +13,10 @@ spec:
         app: conversao-distancia
     spec:
       containers:
-        - name: conversao-distancia
-          image: carlosomalaquias/conversao-distancia:v1
-          ports:
-            - containerPort: 5000
+      - name: conversao-distancia
+        image: carlosomalaquias/conversao-distancia:v1
+        ports:
+          - containerPort: 5000
 ---
 apiVersion: v1
 kind: Service
