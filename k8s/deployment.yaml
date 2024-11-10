@@ -16,7 +16,7 @@ spec:
       - name: conversao-distancia
         image: carlosomalaquias/conversao-distancia:v1
         ports:
-          - containerPort: 5000
+        - containerPort: 5000
 ---
 apiVersion: v1
 kind: Service
@@ -28,5 +28,4 @@ spec:
   ports:
   - port: 80
     targetPort: 5000
-    nodePort: 30000
   type: NodePort
